@@ -1,0 +1,52 @@
+#app {
+  text-align: center;
+  padding: 1.5rem 0;
+  height: 100vh;
+  background: $bg-gradient-2;
+
+  header {
+    h1 {
+      position: relative;
+      @include flex();
+      gap: 1.5rem;
+
+      .image-box {
+        @include abs(10rem, 0, 60%);
+        .logo {
+          @include size(4rem, auto);
+          object-fit: cover;
+          user-select: none;
+        }
+      }
+
+      span {
+        font-size: $text-xl;
+        color: transparent;
+        background-image: $bg-gradient-1;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+    }
+
+    p {
+      font-size: $text-lg;
+    }
+  }
+
+  main {
+    img {
+      @include size(80rem, auto);
+      margin-top: 1.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  footer {
+    font-weight: bolder;
+    font-size: $text-lg;
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

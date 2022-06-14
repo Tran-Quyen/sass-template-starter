@@ -1,0 +1,58 @@
+.link {
+  $size-border: 2px;
+  padding: 5px 1rem;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  position: relative;
+
+  span {
+    position: absolute;
+    display: inline-block;
+    @include size(0, 0);
+    background: $bg-gradient-4;
+    opacity: 0;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+      @include size(0, $size-border);
+    }
+    &:nth-child(2) {
+      top: 0;
+      right: 0;
+      @include size($size-border, 0);
+    }
+    &:nth-child(3) {
+      right: 0;
+      bottom: 0;
+      @include size(0, $size-border);
+    }
+    &:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      @include size($size-border, 0);
+    }
+  }
+
+  &:hover {
+    span {
+      opacity: 1;
+      &:nth-child(1) {
+        @include size(100%, $size-border);
+      }
+      &:nth-child(2) {
+        @include size($size-border, 100%);
+      }
+      &:nth-child(3) {
+        @include size(100%, $size-border);
+      }
+      &:nth-child(4) {
+        @include size($size-border, 100%);
+      }
+    }
+  }
+}

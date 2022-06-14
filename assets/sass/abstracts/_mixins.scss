@@ -1,0 +1,19 @@
+@mixin size($width: 10rem, $height: 10rem) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($justify-content: center, $align-items: center, $wrap: wrap, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
+}
+
+@mixin abs($x: 50%, $translateX: -50%, $y: 50%, $translateY: -50%) {
+  position: absolute;
+  top: $y;
+  left: $x;
+  transform: translateX($translateX) translateY($translateY);
+}

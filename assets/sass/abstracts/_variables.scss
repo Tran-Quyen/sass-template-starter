@@ -1,0 +1,30 @@
+// Colors
+$white-clr: #fff;
+$black-clr: #000;
+$primary-clr: #0984e3;
+
+// Gradient Backgrounds
+$bg-gradient-1: linear-gradient(64.5deg, rgba(245, 116, 185, 1) 14.7%, rgba(89, 97, 223, 1) 88.7%);
+$bg-gradient-2: linear-gradient(114.2deg, rgba(121, 194, 243, 1) 22.6%, rgba(255, 180, 239, 1) 67.7%);
+$bg-gradient-3: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+$bg-gradient-4: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+;
+
+
+// Text Size
+$text-sm: 1rem;
+$text-md: 1.6rem;
+$text-lg: 2rem;
+$text-xl: 4.5rem;
+
+// Fonts
+$font-family-base: "Hiragino Sans", "Noto Sans Japanese", "Yu Gothic", "Meiryo", "Hiragino Kaku Gothic Pro",
+  "游ゴシック", "メイリオ", "MS ゴシック", "sans-serif";
+$font-family-heading: "Playfair Display", serif;
+
+// Breakpoints
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px,
+);
