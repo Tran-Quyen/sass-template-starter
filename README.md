@@ -24,7 +24,7 @@ This is the folder structure for newbie to learn about sass syntax.
 
 #### ❄️Author: Quyen Dang
 
-#### ⏰Created at 04-06-2022
+#### ⏰Created at 14-06-2022
 
 #### 🔥 Facebook: https://www.facebook.com/QuyenGiaSuJS/
 
